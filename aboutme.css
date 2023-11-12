@@ -9,9 +9,9 @@
     background-size: cover;
     color: aliceblue;
 }
-
+/*Header*/
 header{
-padding-bottom: 30px;
+padding-top: 30px;
 }
 header h1{
     /* Sandra Meraz */
@@ -47,7 +47,7 @@ header h4{
     padding-top: 30px;
   }
 
-.wrapper a{
+.vertical a{
     display: inline-block;
     min-height: 40px;
     width: 40px;
@@ -59,15 +59,30 @@ header h4{
     color: aliceblue;
     transition: all .5s ease;
 }
-.wrapper a:hover{
+.vertical a:hover{
     background-color: darkorchid;
 }
-
+/*About me*/
+.card{
+    display: flexbox;
+    position:static;
+    align-items: center;
+    margin: 50px;
+} 
+.card-body{
+    background-color: rgba(167, 159, 159, 0.612);
+    border: darkorchid;
+    font-family: 'Denk One';
+    font-size: 30px;
+    text-shadow: black 10px 2px 8px;
+    text-align: justify;
+}
+/*Tumbas*/
 .tumbas{
     display: flexbox;
     justify-content: right;
     position: relative;
-    left: 500px;
+    right: -500px;
 }
 .containergrave{
     position: relative;
