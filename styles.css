@@ -68,7 +68,9 @@ header h4{
     justify-content: right;
     position: relative;
     grid-template-columns: 100% 2fr;
-    margin: 0 410px
+    margin: 0 410px;
+    float: right;
+
 }
 .containergrave{
     position: relative;
