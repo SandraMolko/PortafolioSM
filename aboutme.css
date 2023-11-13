@@ -63,17 +63,15 @@ header h4{
     background-color: darkorchid;
 }
 /*About me*/
-.card{
+#aboutme{
     display: flexbox;
-    position:static;
+    position:relative;
     align-items: center;
-    margin: 50px;
+    margin: 20px;
 } 
 .card-body{
-    background-color: rgba(167, 159, 159, 0.612);
-    border: darkorchid;
     font-family: 'Denk One';
-    font-size: 30px;
+    font-size: 20px;
     text-shadow: black 10px 2px 8px;
     text-align: justify;
 }
@@ -82,7 +80,7 @@ header h4{
     display: flexbox;
     justify-content: right;
     position: relative;
-    right: -500px;
+    left: 500px;
 }
 .containergrave{
     position: relative;

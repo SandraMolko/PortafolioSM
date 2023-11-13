@@ -17,18 +17,18 @@ header h1{
     /* Sandra Meraz */
     font-family: 'Butcherman';
     font-style: normal;
-    font-weight: 400;
+    font-weight:bold;
     text-align: center;
     color: aliceblue;
     text-shadow: black 10px 2px 8px;
-    font-size: 100px;
+    font-size: 90px;
 
 }
 header h4{
     /* Fullstack Java Developer */
     font-family: 'Chela One';
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     text-align: center;
     color: aliceblue;
     text-shadow: black 10px 2px 8px;
@@ -37,7 +37,7 @@ header h4{
 }
 .horizontal {
     writing-mode: horizontal-tb;
-    display: flexbox;
+    display:grid;
     align-items: center;
   }
   
@@ -67,7 +67,8 @@ header h4{
     display: flexbox;
     justify-content: right;
     position: relative;
-    left: 500px;
+    grid-template-columns: 100% 2fr;
+    margin: 0 410px
 }
 .containergrave{
     position: relative;
@@ -96,11 +97,7 @@ header h4{
     position: fixed;
     align-items: center;
 }
-.containerwitch{
-    position:absolute;
-    padding-left: 120px;
-    
-}
+
 footer{
     text-align: right;
     padding: 30px;
@@ -119,6 +116,9 @@ footer a{
 footer a:hover{
     color: darkorchid;
     padding-right: 6px;
+}
+.containerwitch{
+    margin: 0 120px;
 }
 /*Animación*/
 @keyframes witch{
