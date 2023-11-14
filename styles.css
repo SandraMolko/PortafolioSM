@@ -68,9 +68,7 @@ header h4{
     justify-content: right;
     position: relative;
     grid-template-columns: 100% 2fr;
-    margin: 0 410px;
-    float: right;
-
+    margin: 0 410px
 }
 .containergrave{
     position: relative;
@@ -119,8 +117,8 @@ footer a:hover{
     color: darkorchid;
     padding-right: 6px;
 }
-.containerwitch{
-    margin: 0 120px;
+.witch{
+    padding-left: 100px;
 }
 /*Animación*/
 @keyframes witch{

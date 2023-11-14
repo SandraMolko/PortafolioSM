@@ -41,40 +41,17 @@ header h4{
     align-items: center;
   }
   
-  .vertical {
-    writing-mode: vertical-rl;
-    padding-left: 30px;
-    padding-top: 30px;
-  }
-
-.vertical a{
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: aliceblue;
-    transition: all .5s ease;
-}
-.vertical a:hover{
-    background-color: darkorchid;
-}
 /*About me*/
 #aboutme{
     display:flex;
     position:relative;
     align-items: center;
     margin: 20px;
-} 
-.card-body{
     font-family: 'Denk One';
     font-size: 20px;
     text-shadow: black 10px 2px 8px;
     text-align: justify;
-}
+} 
 /*Tumbas*/
 .tumbas{
     display: flexbox;
@@ -105,15 +82,7 @@ header h4{
     color: darkorchid;
     padding-left: 6px;
 }
-.sociales{
-    position: fixed;
-    align-items: center;
-}
-.containerwitch{
-    position:absolute;
-    padding-left: 120px;
-    
-}
+
 footer{
     text-align: right;
     padding: 30px;
@@ -134,15 +103,15 @@ footer a:hover{
     padding-right: 6px;
 }
 /*Animación*/
-@keyframes witch{
+@keyframes ghost{
     from{opacity: 1;}
     to{opacity: 0;}
 }
-.witch{
-    animation-name: witch;
+.ghost{
+    animation-name: ghost;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-direction:alternate-reverse;
+    animation-direction:alternate;
 }
 @media(max-width:991px){
     .tumbas{
