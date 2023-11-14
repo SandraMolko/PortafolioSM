@@ -41,25 +41,35 @@ header h4{
     align-items: center;
   }
 
-/*About me*/
-#aboutme{
-    display:flex;
-    position:relative;
-    align-items: center;
-    margin: 20px;
-} 
-.card-body{
+/*Tabla skills*/
+
+section{
+    padding:0 100px 0 100px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 3px;
+    background: aliceblue url("gradient.gif") bottom left repeat-x;
+    color: aliceblue;
     font-family: 'Denk One';
     font-size: 20px;
-    text-shadow: black 10px 2px 8px;
-    text-align: justify;
-}
+ }
+td {
+    width: 10%;
+    text-align: center;
+    vertical-align: top;
+    border: 3px solid aliceblue;
+    border-collapse: collapse;
+    padding: 0.3em;
+    color: aliceblue;
+    font-family: 'Denk One';
+ }
 /*Tumbas*/
 .tumbas{
     display: flexbox;
     justify-content: right;
     position: relative;
-    margin: 0 410px;
+    margin: 0 350px;
 }
 .containergrave{
     position: relative;
@@ -83,15 +93,6 @@ header h4{
 .tumba a:hover{
     color: darkorchid;
     padding-left: 6px;
-}
-.sociales{
-    position: fixed;
-    align-items: center;
-}
-.containerwitch{
-    position:absolute;
-    padding-left: 120px;
-    
 }
 footer{
     text-align: right;
