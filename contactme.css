@@ -1,0 +1,105 @@
+@import url(https://fonts.google.com/specimen/Butcherman?query=butcherman);
+@import url(https://fonts.google.com/specimen/Chela+One?query=chela);
+@import url(https://fonts.google.com/specimen/Denk+One?query=denk);
+
+*{
+    background-image: url(./src/img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: aliceblue;
+}
+
+header{
+padding-bottom: 30px;
+}
+header h1{
+    /* Sandra Meraz */
+    font-family: 'Butcherman';
+    font-style: normal;
+    font-weight:bold;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: black 10px 2px 8px;
+    font-size: 90px;
+
+}
+header h4{
+    /* Fullstack Java Developer */
+    font-family: 'Chela One';
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: black 10px 2px 8px;
+    font-size: 30px;
+
+}
+.horizontal {
+    writing-mode: horizontal-tb;
+    display:grid;
+    align-items: center;
+  }
+  
+  .vertical {
+    writing-mode: vertical-rl;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+.wrapper a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: aliceblue;
+    transition: all .5s ease;
+}
+.wrapper a:hover{
+    background-color: darkorchid;
+}
+footer{
+    text-align: right;
+    padding: 30px;
+}
+footer a{
+    color: aliceblue;
+    font-family: 'Denk One';
+    text-align: right;
+    text-decoration: none;
+    border-top: 5px aliceblue;
+    border-bottom: 5px aliceblue;
+    transition: all .5s ease;
+    font-weight: bold;
+    text-shadow: black 5px 1px 4px;
+}
+footer a:hover{
+    color: darkorchid;
+    padding-right: 6px;
+}
+/*Animación*/
+@keyframes witch{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+.witch{
+    animation-name: witch;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+}
+@media(max-width:991px){
+    .tumbas{
+        text-align: center;
+        position: fixed;
+        align-items: center;
+    }
+    .footer{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
