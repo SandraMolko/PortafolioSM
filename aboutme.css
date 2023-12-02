@@ -1,13 +1,11 @@
-@import url(https://fonts.google.com/specimen/Butcherman?query=butcherman);
-@import url(https://fonts.google.com/specimen/Chela+One?query=chela);
-@import url(https://fonts.google.com/specimen/Denk+One?query=denk);
-
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-image: url(./src/img/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    color: aliceblue;
 }
 /*Header*/
 header{
@@ -17,11 +15,13 @@ header h1{
     /* Sandra Meraz */
     font-family: 'Butcherman';
     font-style: normal;
-    font-weight: 400;
+    font-weight:bold;
     text-align: center;
     color: aliceblue;
     text-shadow: black 10px 2px 8px;
     font-size: 90px;
+    -webkit-text-stroke:1px;
+    -webkit-text-stroke-color: black;
 
 }
 header h4{
@@ -43,14 +43,17 @@ header h4{
   
 /*About me*/
 #aboutme{
-    display:flex;
+    display:flexbox;
     position:relative;
     align-items: center;
     margin: 20px;
     font-family: 'Denk One';
-    font-size: 20px;
+    font-size: 25px;
+    color: aliceblue;
     text-shadow: black 10px 2px 8px;
     text-align: justify;
+    -webkit-text-stroke:0.7px;
+    -webkit-text-stroke-color: black;
 } 
 /*Tumbas*/
 .tumbas{
@@ -59,16 +62,17 @@ header h4{
     position: relative;
     margin: 0 410px;
 }
-.containergrave{
+
+/*Tumbas*/
+.tumbas{
+    text-align: right;
     position: relative;
-    display: inline-block;
-    text-align: center;
-    background:none;
+    padding-right: 60px;
 }
 .tumba a{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     transform: translate(-50%, -50%);
     background: none;
     color:aliceblue;
@@ -83,6 +87,7 @@ header h4{
     padding-left: 6px;
 }
 
+/*Footer*/
 footer{
     text-align: right;
     padding: 30px;
