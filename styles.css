@@ -89,6 +89,7 @@ header h4{
 }
 .wrapper a:hover{
     background-color: darkorchid;
+    color: darkorchid;
 }
 
 .witch{
@@ -131,6 +132,10 @@ footer{
     text-align: right;
     grid-area: footer;
 }
+.footer{
+    padding: 0;
+    margin: 0;
+}
 footer a{
     color: aliceblue;
     font-family: 'Denk One';
@@ -154,6 +159,7 @@ footer a:hover{
     to{opacity: 0;}
 }
 .witch{
+    min-width: 200px;
     animation-name: witch;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -201,5 +207,11 @@ footer a:hover{
         "section section section"
         "menu menu menu"
         "footer footer footer";
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .witch img {
+      width:200px;
     }
 }
