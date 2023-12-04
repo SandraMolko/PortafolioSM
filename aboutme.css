@@ -72,6 +72,11 @@ header h1{
     -webkit-text-stroke:0.7px;
     -webkit-text-stroke-color: black;
 } 
+.sandra{
+    display: flexbox;
+    align-items: center;
+    text-align: center;
+}
 /*Tumbas*/
 .tumbas{
     /* text-align: right;*/
@@ -127,14 +132,22 @@ footer a:hover{
 }
 /*Animación*/
 @keyframes ghost{
-    from{opacity: 1;}
-    to{opacity: 0;}
+    from{
+        margin-left: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+    to{
+        margin-left: 0%;
+        width: 50%;
+        opacity: 0;
+    }
 }
 .ghost{
     animation-name: ghost;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction:alternate-reverse;
 }
 
 /*Mobile*/
