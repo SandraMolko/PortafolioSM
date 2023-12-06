@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    min-height: 100%;
     background-image: url(./src/img/animatedbg.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-body{
-    min-height: 100%;
 }
 html{
     height: 100%;
@@ -50,22 +50,57 @@ header h1{
 
 /*Cards skills*/
 .container{
-    padding: 10px;
-}
-.col{
-    margin: 0;
-    padding: 15px;
-    filter:opacity(100%);
-    transition:filter.25s;
-}
-.col:hover{
-    filter: opacity(0%);
-}
-.card{
-    max-width: 145px;
-    align-items: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+    gap: 10px;
+  }
+  .container img{
+    width:200px;
+    height:270px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 270px;
+    perspective: 1000px;
+    border-radius: 15px;
+    }
+    
+    .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
     text-align: center;
-}
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgb(247, 246, 246);
+    border-radius: 15px;
+    }
+    
+    .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    border-radius: 15px;
+    }
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius:20px;
+    color: floralwhite;
+    }
+    
+    .flip-card-back {
+    transform: rotateY(180deg);
+    box-sizing:border-box;
+    }
+    .flip-card-back p{
+      text-align: justify;
+      font-size:1.8vh;
+    }
 
 /*Tumbas*/
 .tumbas{
@@ -74,6 +109,9 @@ header h1{
      display: flex;
      justify-content: center;
      align-items: center;
+ }
+ .card{
+    background: none;
  }
  .tumba a{
      position: absolute;
