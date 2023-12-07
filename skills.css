@@ -152,7 +152,7 @@ footer a{
     transition: all .5s ease;
     font-weight: bold;
     text-shadow: black 5px 1px 4px;
-    padding: 0 30px;
+    padding: 30px;
 }
 footer a:hover{
     color: darkorchid;
