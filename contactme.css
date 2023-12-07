@@ -20,15 +20,20 @@ header{
     margin: 0;
     grid-area: header;
     }
-.section{
+.main{
     padding: 0px;
     margin: 0;
-    grid-area: section;
+    grid-area: main;
 }
-.menu{
+.form{
     padding: 0px;
     margin: 0;
-    grid-area: menu;
+    grid-area: form;
+}
+.footer{
+    padding: 0px;
+    margin: 0;
+    grid-area: footer;
 }
 header h1{
     /* Contact me */
@@ -140,7 +145,8 @@ header h1{
     grid-template-rows:  auto;
     grid-template-areas:
     "header"
-    "section"
+    "main"
+    "form"
     "footer"
     ;
 }
@@ -151,7 +157,7 @@ header h1{
         grid-template-rows: auto;
         grid-template-areas: 
         "header header"
-        "section section"
+        "main form"
         "footer footer";
     }
 }
@@ -163,7 +169,6 @@ header h1{
         grid-template-rows: auto;
         grid-template-areas: 
         "header header header"
-        "section section section"
-        "footer footer footer";
+        "main form footer";
     }
 }

@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(./src/img/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 }
 body{
     min-height: 100%;
+    background-image: url(./src/img/animatedbg.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 html{
     height: 100%;
@@ -32,6 +32,7 @@ header{
     padding: 0px;
     margin: 0;
     grid-area: menu;
+    
 }
 
 header h1{
@@ -89,7 +90,6 @@ header h4{
 }
 .wrapper a:hover{
     background-color: darkorchid;
-    color: darkorchid;
 }
 
 .witch{
@@ -106,6 +106,9 @@ header h4{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.card{
+    background: none;
 }
 .tumba a{
     position: absolute;

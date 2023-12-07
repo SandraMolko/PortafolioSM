@@ -23,10 +23,10 @@ header{
     margin: 0;
     grid-area: header;
     }
-.section{
+.aboutme{
     padding: 0px;
     margin: 0;
-    grid-area: section;
+    grid-area: aboutme;
 }
 .menu{
     padding: 0px;
