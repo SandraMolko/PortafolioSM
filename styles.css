@@ -168,7 +168,7 @@ footer a:hover{
     }
 }
 .witch{
-    min-width: 200px;
+    max-width: 180px;
     animation-name: witch;
     animation-duration: 2s;
     animation-iteration-count: infinite;
